@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:id="@+id/dialog_imageView_id"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/dialog_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="72dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="画 面 预 览"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#50c0e9"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@android:color/transparent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextureView
+                android:id="@+id/cView"
+                android:layout_width="240dp"
+                android:layout_height="320dp"/>
+
+            <TextureView
+                android:id="@+id/rView"
+                android:layout_width="240dp"
+                android:layout_height="320dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/rView"
+                android:scrollbars="vertical"
+                android:text="@string/说明"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFront"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="打开前置"
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/btnSet"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="src_over"
+            android:scrollbars="none"
+            android:text="设定标准"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text=""
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"/>
+
+    <SeekBar
+        android:id="@+id/addNum"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:max="100000"
+
+        android:progress="30000"
+        android:progressTint="@color/ic_launcher_background"
+        android:soundEffectsEnabled="false"
+        android:theme="@android:style/Widget.DeviceDefault.Light.SeekBar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:text="@string/Contact"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+
+</LinearLayout>

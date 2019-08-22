@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KeepBright</string>
+
+    <string name="说明">
+        #说明 ：\n
+        1.“打开前置”摄像头>>调整好眼睛与屏幕距离（35cm左右）\n
+        2.按下时的值+滑动条值 =“设定标准”距离;
+        按HOME键或返回键离开软件界面,进行跨应用检测提醒\n
+        3.按“关闭”停止检测功能。若其他应用使用摄像头，建议先停止软件（否则软件会自动停止，需手动重启）\n
+    </string>
+    <string name="Contact">
+        *软件不会自动启动摄像头和检测功能*\n
+        *也不存在数据后门，请放心使用*\n\n
+         Concat：caryleeen@gmail.com
+    </string>
+
+</resources>
